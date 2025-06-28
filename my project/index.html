@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Portfolio Generator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+</head>
+<body>
+
+  <!-- Landing Section -->
+  <section id="landing">
+    <div class="container">
+      <h1>AI Portfolio Generator</h1>
+      <p>Create your custom portfolio in seconds</p>
+      <button onclick="startGenerator()">Get Started</button>
+    </div>
+  </section>
+
+  <!-- Form Section -->
+  <section id="form-section" style="display: none;">
+    <div class="container">
+      <h2 class="form-title">Enter Your Details</h2>
+      <form id="portfolioForm" class="form-style">
+
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your Name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="bio">About you</label>
+          <input type="text" id="bio" placeholder="Short Bio" required />
+        </div>
+
+        <div class="form-group">
+          <label for="skills">Skills</label>
+          <input type="text" id="skills" placeholder="Skills (comma separated)" required />
+        </div>
+
+        <div class="form-group" id="projectsContainer">
+          <label>Project</label>
+          <div class="project-input">
+            <input type="text" class="projectTitle" placeholder="Project Name" required />
+            <input type="url" class="projectLink" placeholder="Project Link (https://...)" required />
+          </div>
+        </div>
+
+        <button type="button" id="addProjectBtn" class="add-project-btn">+ Add Another Project</button>
+
+        <div class="form-group">
+          <label for="contact">Email</label>
+          <input type="email" id="contact" placeholder="Contact Email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="github">GitHub link</label>
+          <input type="text" id="github" placeholder="GitHub URL" />
+        </div>
+
+        <div class="form-group">
+          <label for="linkedin">LinkedIn link</label>
+          <input type="text" id="linkedin" placeholder="LinkedIn URL" />
+        </div>
+
+        <div class="form-group">
+          <label>Upload Resume (PDF or DOC):</label>
+          <input type="file" id="resumeFile" accept=".pdf,.doc,.docx" required />
+        </div>
+
+        <div class="form-group">
+          <label>Upload Profile Picture:</label>
+          <input type="file" id="profilePic" accept="image/*" required />
+        </div>
+
+        <div class="form-group">
+          <label for="template">Choose Template:</label>
+          <select id="template" required>
+            <option value="">--Select Template--</option>
+            <option value="modern">Modern</option>
+            <option value="classic">Classic</option>
+            <option value="creative">Creative</option>
+            <option value="professional">Professional</option>
+            <option value="simple">Simple</option>
+          </select>
+        </div>
+
+        <button type="submit">Generate Portfolio</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Preview Section -->
+  <section id="previewArea" style="display: none;">
+    <div class="container">
+      <h2>Preview Your Portfolio</h2>
+      <iframe id="previewFrame" style="width:100%; height:600px; border:1px solid #ccc;"></iframe>
+      <div id="loading" style="display:none; text-align:center;">
+        <p>Generating portfolio...</p>
+      </div>
+      <button onclick="downloadPortfolio()">Download as HTML</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
