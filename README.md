@@ -12,7 +12,6 @@ A fully responsive and customizable **AI Portfolio Generator** built using **HTM
 - 🖼️ Add **profile picture**, name, bio, and contact info
 - 🛠️ Input **skills**, **projects**, and social media links
 - 📄 **Preview** and **download** portfolio as HTML 
-- 📱 Fully responsive for desktop and mobile
 - ✨ Smooth animations and clean design
 
 
