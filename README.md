@@ -16,5 +16,9 @@ A fully responsive and customizable **AI Portfolio Generator** built using **HTM
 - ✨ Smooth animations and clean design
 
 
+🔗 Try it live:
+https://vaishnavikhosare.github.io/AI-portfolio-generator/
+
+
 
 
