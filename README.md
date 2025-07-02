@@ -1,7 +1,7 @@
 # AI--portofolio-generator
 # 💼 AI Portfolio Generator
 
-A fully responsive and customizable **AI Portfolio Generator** built using **HTML, CSS, and JavaScript**. Easily create and download your personal portfolio website in just a few clicks — no coding needed!
+A fully responsive and customizable **AI Portfolio Generator** built using **HTML, CSS, and JavaScript**. Easily create and download your personal portfolio website in just a few clicks 
 
 ---
 
